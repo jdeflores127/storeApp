@@ -1,0 +1,16 @@
+<div class="px-10">
+    <!-- <input type="number" [value]="duration()" (change)="changeDuration($event)"/> -->
+    <h1 class="text-lg font-bold">About</h1>
+    <p class="text-xs">Lorem, ipsum dolor sit amet <span highlights>consectetur adipisicing elit</span>. Reprehenderit unde, maxime quasi sint autem fugiat velit id, qui ipsum consequuntur similique quo fuga rerum ullam, quaerat totam recusandae tempora doloremque?</p>
+    <p class="text-sm">numero de clientes:
+        @if (duration() > 0) {
+            <app-counter [duration]="duration()" [message]="message()"/>
+        }
+    </p>
+    <div>
+        <app-waveaudio audioUrl="assets/audio.mp3"></app-waveaudio>        
+    </div>
+</div>
+<div>
+    <!-- <input type="text" [value]="duration()" (change)="changeMessage($event)"/> -->
+</div>

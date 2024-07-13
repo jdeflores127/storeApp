@@ -1,0 +1,10 @@
+<p>waveaudio works!</p>
+<div>
+    <!--Cuando es renderizado y aplicar propiedades-->
+    <div #wave></div>
+    @if (isPlaying()) {
+        <span (click)="playPause()">pause</span>
+    }@else {
+        <span (click)="playPause()">play</span>
+    }
+</div>

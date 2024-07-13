@@ -21,7 +21,14 @@
     "lib": [
       "ES2022",
       "dom"
-    ]
+    ],
+    "paths": {
+      /*Se configura un alias por dominio, para imports cortos*/
+      "@shared/*": ["./src/app/domains/share/*"],
+      "@customPipe/*": ["./src/app/domains/share/pipes/*"],
+      "@info/*":["./src/app/domains/info/*"], 
+      "@productos/*":["./src/app/domains/productos/*"]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
